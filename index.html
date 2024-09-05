@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tower of Hanoi Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tower of Hanoi Visualization</h1>
+
+    <!-- Input for Number of Discs -->
+    <div class="input-container">
+        <label for="discNumber">Choose number of discs:</label>
+        <input type="number" id="discNumber" min="1" max="10" value="3">
+        <label for="delayInput">Choose delay time (ms):</label>
+        <input type="number" id="delayInput" min="100" value="500">
+
+        <button onclick="initialize()">Initialize</button>
+    </div>
+
+    <div class="container">
+        <div id="rod1" class="rod"></div>
+        <div id="rod2" class="rod"></div>
+        <div id="rod3" class="rod"></div>
+    </div>
+
+    <button id="startButton" onclick="startHanoi()" disabled>Start Solving</button>
+    <p id="message">Choose the number of discs and initialize.</p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
